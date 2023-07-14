@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--1 set方法注入-->
+    <bean id="book" class="org.example.iocxml.di.Book">
+        <property name="bname" value="vue"></property>
+        <property name="author" value="jiajia828"></property>
+<!--        null值-->
+<!--        <property name="others">-->
+<!--            <null></null>-->
+<!--        </property>-->
+<!--        xml实体-->
+<!--        <property name="others" value="&lt;&gt;"></property>-->
+<!--        CDATA节-->
+        <property name="others">
+            <value><![CDATA[a < b]]></value>
+        </property>
+    </bean>
+
+    <!--2 构造器注入-->
+    <bean id="bookCon" class="org.example.iocxml.di.Book">
+        <constructor-arg name="bname" value="java开发"></constructor-arg>
+        <constructor-arg name="author" value="jiajia828"></constructor-arg>
+    </bean>
+</beans>
