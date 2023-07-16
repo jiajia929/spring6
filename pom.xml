@@ -15,6 +15,7 @@
     <module>spring-reflect</module>
       <module>spring</module>
       <module>spring6-aop</module>
+    <module>spring6-junit</module>
   </modules>
 
   <name>spring6</name>
@@ -34,6 +35,20 @@
       <artifactId>junit-jupiter-api</artifactId>
       <version>5.6.3</version>
     </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.1</version>
+    </dependency>
+
+    <!--spring 整合junit相关依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>6.0.9</version>
+    </dependency>
+
     <!--spring context依赖-->
     <!--当你引入Spring Context依赖之后，表示将Spring的基础依赖引入了-->
     <dependency>

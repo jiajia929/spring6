@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring" />
         <module name="spring-reflect" />
+        <module name="spring6-ioc-xml" />
+        <module name="spring6-junit" />
         <module name="spring6-aop" />
         <module name="spring-first" />
-        <module name="spring6-ioc-xml" />
         <module name="spring6-ioc-annotation" />
       </profile>
     </annotationProcessing>
